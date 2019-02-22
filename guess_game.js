@@ -19,4 +19,25 @@ function game(){
     }
     alert('You guessed my age in ' + attempt + ' attempts')
     console.log('total guessses', attempt);
+
+ var favcity = ['seattle', 'newyork', 'la'];
+    var answer = prompt('what is my favorite city');
+    var flag;
+    
+    for (var i = 0; i< favcity.length; i++){
+        console.log('current iteration:', favcity[i]);
+    
+        if (answer === favcity[i]){
+            alert('you are right');
+            flag = true;
+            break;
+    
+        }
+    }
+       
+    if (!flag) {    
+        alert('you are wrong');
+    }
+
+
 }
